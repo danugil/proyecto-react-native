@@ -1,15 +1,21 @@
-import { View } from "react-native";
-import Header from "../components/Header";
+import { View, StyleSheet } from "react-native";
 import Categories from "../components/Categories";
+import { colors } from "../global/colors";
 
 
-function Home({ setCategorySelected }) {
+function Home({navigation}) {
     return (
-        <View>
-            <Header title={"Inicio"} />
-            <Categories setCategorySelected={setCategorySelected} />
+        <View style={styles.container}>
+            <Categories navigation={navigation}/>
         </View>
     );
 };
 
 export default Home;
+
+const styles = StyleSheet.create({
+    container: {
+        marginTop: 10, 
+        backgroundColor: colors.bg,
+    },
+});

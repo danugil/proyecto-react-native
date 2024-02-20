@@ -6,6 +6,7 @@ export const colors = {
     beige: '#FDFCEE',
     white: '#FFFFFF',
     black: '#000000',
+    bg: '#F2F2F2',
 }
 
 //https://colorhunt.co/palette/6c22a66962ad83c0c196e9c6

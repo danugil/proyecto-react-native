@@ -38,7 +38,7 @@ export default Search;
 const styles = StyleSheet.create({
     continer: {
         flexDirection: 'row',
-        gap: 4,
+        gap: '2%',
         paddingHorizontal: 20,
         paddingVertical: 10,
         alignItems: 'center',
@@ -63,6 +63,6 @@ const styles = StyleSheet.create({
         backgroundColor: colors.purple,
         borderRadius: 8,
         height: 44,
-        width: 44,
+        width: '13%',
     },
 });
