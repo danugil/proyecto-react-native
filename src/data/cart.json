@@ -1,0 +1,34 @@
+[
+    {
+        "id": 50,
+        "title": "Mascarilla Iluminadora con Vitamina C",
+        "description": "Revitaliza la piel apagada, aportando luminosidad y un tono uniforme.",
+        "price": 39.00,
+        "discountPercentage": 16.87,
+        "rating": 4.33,
+        "stock": 30,
+        "brand": "Garnier",
+        "category": "Mascarillas faciales",
+        "thumbnail": "https://i.pinimg.com/736x/8b/2d/27/8b2d27332e448b19600344c1afff8bde.jpg",
+        "images": [
+            "https://i.pinimg.com/736x/8b/2d/27/8b2d27332e448b19600344c1afff8bde.jpg"
+        ],
+        "quantity": 1
+    },
+    {
+        "id": 66,
+        "title": "Perfume Floral Elegante",
+        "description": "Una fragancia floral con toques de rosa y jazmín, perfecta para mujeres que buscan elegancia.",
+        "price": 79.99,
+        "discountPercentage": 3.23,
+        "rating": 4.79,
+        "stock": 40,
+        "brand": "Chanel",
+        "category": "Fragancias",
+        "thumbnail":   "https://media.vogue.mx/photos/606ee52759d9c11df252f823/master/w_1600%2Cc_limit/Perfume-chanel-chance-eau-fraiche-eau-de-toilette.jpg",
+        "images": [
+            "https://media.vogue.mx/photos/606ee52759d9c11df252f823/master/w_1600%2Cc_limit/Perfume-chanel-chance-eau-fraiche-eau-de-toilette.jpg"
+        ],
+        "quantity": 1
+    }
+]

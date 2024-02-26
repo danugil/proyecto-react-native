@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "userId": 2,
+    "createdAt": 1679869276580,
+    "items": [
+      {
+        "id": 69,
+        "title": "Eau de Parfum Clásico para Mujeres",
+        "description": "Una esencia atemporal con notas florales y amaderadas, diseñada para mujeres con estilo clásico.",
+        "price": 74.75,
+        "discountPercentage": 17.55,
+        "rating": 4.77,
+        "stock": 20,
+        "brand": "Gucci",
+        "category": "Fragancias",
+        "thumbnail": "https://static.beautytocare.com/media/catalog/product/g/u/gucci-guilty-eau-de-parfum-for-women-90ml.jpg",
+        "images": [
+          "https://static.beautytocare.com/media/catalog/product/g/u/gucci-guilty-eau-de-parfum-for-women-90ml.jpg"
+        ],
+        "quantity": 1
+      },
+      {
+        "id": 71,
+        "title": "Desodorante Roll-On para Mujeres",
+        "description": "Protección duradera contra el mal olor, con una fragancia floral delicada y fresca.",
+        "price": 5.99,
+        "discountPercentage": 14.65,
+        "rating": 4.71,
+        "stock": 40,
+        "brand": "Dove",
+        "category": "Desodorantes",
+        "thumbnail": "https://farmacityar.vtexassets.com/arquivos/ids/203818/46007_antitranspirante-femenino-dove-bolilla-original-x-50-ml_imagen-1.jpg?v=637377677861930000",
+        "images": [
+          "https://farmacityar.vtexassets.com/arquivos/ids/203818/46007_antitranspirante-femenino-dove-bolilla-original-x-50-ml_imagen-1.jpg?v=637377677861930000"
+        ],
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "createdAt": 1679832276580,
+    "items": [
+      {
+        "id": 83,
+        "title": "Cepillo de Maquillaje Profesional",
+        "description": "Cepillo de cerdas suaves para una aplicación de maquillaje precisa y profesional.",
+        "price": 12,
+        "discountPercentage": 3.34,
+        "rating": 4.84,
+        "stock": 25,
+        "brand": "BeautyEssentials",
+        "category": "Accesorios",
+        "thumbnail":  "https://s.libertaddigital.com/2021/01/04/brochas-de-maquillaje-ruesious-set-premium-de-10-piezas.jpg",
+        "images": [
+          "https://s.libertaddigital.com/2021/01/04/brochas-de-maquillaje-ruesious-set-premium-de-10-piezas.jpg"
+        ],
+        "quantity": 1
+      },
+      {
+        "id": 87,
+        "title": "Pulsera Repelente de Mosquitos",
+        "description": "Accesorio práctico que proporciona protección continua contra picaduras de mosquitos.",
+        "price": 5,
+        "discountPercentage": 10.94,
+        "rating": 4.93,
+        "stock": 35,
+        "brand": "MosquitoGuard",
+        "category": "Repelente",
+        "thumbnail":"https://storage.googleapis.com/catalog-pictures-carrefour-es/catalog/pictures/hd_510x_/5050565370679_1.jpg",
+        "images": [
+          "https://storage.googleapis.com/catalog-pictures-carrefour-es/catalog/pictures/hd_510x_/5050565370679_1.jpg"
+        ],
+        "quantity": 3
+      }
+    ]
+  }
+]

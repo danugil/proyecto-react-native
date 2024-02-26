@@ -1,31 +1,29 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { View, FlatList, StyleSheet } from "react-native";
-import allProducts from "../data/allProducts.json";
 import ProductItem from "../components/ProductItem";
 import Search from "../components/Search";
 import { colors } from "../global/colors";
+import { useSelector } from "react-redux";
 
-function ItemListCategories({ navigation, route }) {
-    const [products, setProducts] = useState([]);
+function ItemListCategories({ navigation }) {
     const [productsFiltered, setProductsFiltered] = useState([]);
-
-    const { category } = route.params;
-
-    useEffect(() => {
-        if (category) {
-            const productsByCategories = allProducts.filter((product) => product.category === category);
-            setProducts(productsByCategories);
-            setProductsFiltered(productsByCategories)
-        }
-    }, [category]);
+    const productsFilteredByCategory = useSelector(
+        (state) => state.shopReducer.value.productsFilteredByCategory
+    );
 
     const search = (searchWord) => {
-        let filteredProducts = products
+        let filteredProducts = productsFilteredByCategory
         if (searchWord && searchWord != "") {
-            filteredProducts = filteredProducts.filter(p => p.title.includes(searchWord))
+            filteredProducts = filteredProducts.filter(p => p.title.toLowerCase().includes(searchWord.toLowerCase()))
         }
         setProductsFiltered(filteredProducts)
     };
+
+    useEffect(() => {
+        if (productsFilteredByCategory) {
+            setProductsFiltered(productsFilteredByCategory)
+        }
+    }, [])
 
     return (
         <View style={styles.container}>

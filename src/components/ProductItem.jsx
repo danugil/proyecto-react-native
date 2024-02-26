@@ -23,7 +23,7 @@ const ProductItem = ({ product, navigation }) => {
             <Pressable onPress={() => navigation.navigate("ItemDetail", { id: product.id })}>
                 <Card>
                     <Text style={width < 350 ? styles.text2 : styles.text1}>{product.title}</Text>
-                    <Image style={styles.images} resizeMode="cover" source={{ uri: product.images[0] }} />
+                    <Image style={styles.images} source={{ uri: product.images[0] }} />
                 </Card>
             </Pressable>
         </>
@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
         marginBottom: 5,
     },
     images: {
+        resizeMode: 'center',
         width: '100%',
         height: 250,
         borderRadius: 10,

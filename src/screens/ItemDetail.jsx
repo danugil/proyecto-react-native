@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { StyleSheet, Text, View, Image, Pressable } from "react-native";
-import allProducts from "../data/allProducts.json";
+import allProducts from "../data/allProducts2.json";
 import { colors } from "../global/colors";
 
 const ItemDetail = ({ navigation, route }) => {
@@ -14,7 +14,7 @@ const ItemDetail = ({ navigation, route }) => {
     }, [id]);
 
     return (
-        <View>
+        <View style={styles.container}>
             {product ? (
                 <View>
                     <View>
@@ -42,9 +42,14 @@ const ItemDetail = ({ navigation, route }) => {
 export default ItemDetail;
 
 const styles = StyleSheet.create({
+    container: {
+        backgroundColor: colors.white,
+        height: '100%',
+    },
     image: {
         height: 400,
         width: '100%',
+        resizeMode: 'center', 
     },
     text1: {
         fontFamily: 'NunitoBold',
@@ -59,7 +64,8 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'flex-start',
-        marginHorizontal: 20,
+        paddingHorizontal: 20,
+        backgroundColor: 'white',
     },
     buyButton: {
         backgroundColor: colors.purple,

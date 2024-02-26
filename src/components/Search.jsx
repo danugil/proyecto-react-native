@@ -38,7 +38,7 @@ export default Search;
 const styles = StyleSheet.create({
     continer: {
         flexDirection: 'row',
-        gap: '2%',
+        justifyContent: 'space-around',
         paddingHorizontal: 20,
         paddingVertical: 10,
         alignItems: 'center',
@@ -54,15 +54,15 @@ const styles = StyleSheet.create({
         fontFamily: 'NunitoRegular',
     },
     icons: {
-        marginTop: 8,
         width: 26,
         height: 26,
     },
     iconsContainer: {
         alignItems: 'center',
+        justifyContent: 'center',
         backgroundColor: colors.purple,
         borderRadius: 8,
-        height: 44,
+        height: 50,
         width: '13%',
     },
 });
