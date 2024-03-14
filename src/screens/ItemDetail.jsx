@@ -1,12 +1,20 @@
 import { useEffect, useState } from "react";
-import { StyleSheet, Text, View, Image, Pressable } from "react-native";
+import { StyleSheet, Text, View, Image, Pressable, ActivityIndicator } from "react-native";
 import allProducts from "../data/allProducts2.json";
 import { colors } from "../global/colors";
+import { useDispatch } from "react-redux";
+import { addItem } from "../features/shop/cartSlice";
 
 const ItemDetail = ({ navigation, route }) => {
     const [product, setProduct] = useState(null);
 
-    const { id } = route.params
+    const { id } = route.params;
+
+    const dispatch = useDispatch();
+
+    const onAddCart = () => {
+        dispatch(addItem({...product, quantity: 1}))
+    }
 
     useEffect(() => {
         const productFinded = allProducts.find((product) => product.id === id)
@@ -27,13 +35,13 @@ const ItemDetail = ({ navigation, route }) => {
                         <Text style={styles.text1}>{product.title}</Text>
                         <Text style={styles.text2}>{product.description}</Text>
                         <Text style={styles.text1}>${product.price}</Text>
-                        <Pressable style={styles.buyButton}>
-                            <Text style={styles.text3}>COMPRAR</Text>
+                        <Pressable style={styles.buyButton} onPress={onAddCart}>
+                            <Text style={styles.text3}>Agregar al carrito</Text>
                         </Pressable>
                     </View>
                 </View>
             ) : (
-                <Text>Cargando...</Text>
+                <ActivityIndicator style={styles.loading} size="large" color={colors.purple}/>
             )}
         </View>
     );
@@ -68,15 +76,29 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
     },
     buyButton: {
-        backgroundColor: colors.purple,
-        padding: 20,
+        backgroundColor: colors.teal,
         borderRadius: 15,
-        width: '100%',
+        justifyContent: 'center',
         alignItems: 'center',
+        padding: 12,
+        marginTop: 30,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+        elevation: 2,
+        width: '100%',
     },
     text3: {
         fontFamily: 'NunitoBold',
         fontSize: 18,
         color: colors.white,
+    },
+    loading:  {
+        flexDirection: 'column',
+        alignSelf: 'center',
     },
 });

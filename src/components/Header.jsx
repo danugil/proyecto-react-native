@@ -13,7 +13,7 @@ export default Header;
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: colors.purple,
+        backgroundColor: colors.blue,
         padding: 10,
         alignItems: 'center',
         shadowColor: "#000",
@@ -23,11 +23,11 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.25,
         shadowRadius: 4,
-        elevation: 5,
+        elevation: 2,
     },
     text1: {
-        fontFamily: 'NunitoBold',
-        fontSize: 24,
+        fontFamily: 'NunitoBlack',
+        fontSize: 28,
         color: colors.white,
     },
 });

@@ -4,7 +4,7 @@ import { StatusBar } from "expo-status-bar";
 import Constants from "expo-constants";
 import { colors } from "./src/global/colors";
 import { fonts } from "./src/global/fonts";
-import TabNavigator from "./src/navigation/TabNavigator";
+import MainNavigator from "./src/navigation/MainNavigator.jsx";
 import { Provider } from "react-redux";
 import store from "./src/store/index.js";
 
@@ -19,7 +19,7 @@ export default function App() {
     <Provider store={store}>
       <SafeAreaView style={styles.container}>
         <StatusBar style="auto" />
-        <TabNavigator />
+        <MainNavigator />
       </SafeAreaView>
     </Provider>
   );

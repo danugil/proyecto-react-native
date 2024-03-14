@@ -10,7 +10,8 @@ const CartItem = ({ item }) => {
       <Text style={styles.text1}>{item.title}</Text>
       <Text>{item.brand}</Text>
       <Text style={styles.text2}>${item.price}</Text>
-      <Counter />
+      <Text style={styles.text3}>x {item.quantity}</Text>
+      {/* <Counter /> */}
     </View>
   );
 };
@@ -48,5 +49,11 @@ const styles = StyleSheet.create({
     height: 200,
     borderRadius: 10,
     resizeMode: 'center',
-},
+  },
+  text3: {
+    fontFamily: 'NunitoBold',
+    fontSize: 18,
+    alignSelf: 'center', 
+    marginTop: 10,
+  },
 });
